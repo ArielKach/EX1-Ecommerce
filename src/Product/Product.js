@@ -23,7 +23,7 @@ const Product = () => {
                 </div>
             </div>
             <div id='productInfo'>
-                <div id='productName'><b>{product.name}</b></div>
+                <div id='productName'><b>{product.title}</b></div>
                 <div><b>Price:</b> ₪{product.price}</div>
                 <div><b>Description:</b> {product.description}</div>
                 <div><b>Selling store:</b> {product.storeName}</div>
