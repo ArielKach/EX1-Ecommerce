@@ -1,4 +1,5 @@
 import './App.css';
+import MainPage from './Main/MainPage';
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,7 +12,8 @@ const App = () => {
     <div className='App'>
       <Router>
         <Routes>
-          <Route element={<Product/>} path={'/:productId'} />
+          <Route element={<MainPage />} path='/' />
+          <Route element={<Product />} path={'/:productId'} />
         </Routes>
       </Router>
     </div>

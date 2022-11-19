@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { products } from '../products';
 import './Product.css'
 
 const Product = () => {
     const { productId } = useParams();;
     const [selectedImage, setSelectedImage] = useState(0);
-    const product = [{
-        id: 1,
-        name: 'banana',
-        price: 5,
-        storeName: 'Good Super',
-        description: 'Tasty Yellow fruit that you want to eat all day long',
-        images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/800px-Banana-Single.jpg', 'https://images.heb.com/is/image/HEBGrocery/000377497'],
-    }].find(product => product.id === +productId)
+    const product = products.find(product => product.id === +productId)
 
 
     return (
