@@ -1,12 +1,17 @@
 import './App.css';
+import MainPage from './Main/MainPage';
 import {
   BrowserRouter as Router,
+  Routes,
+  Route
 } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Router></Router>
+      <Router>
+        <MainPage></MainPage>
+      </Router>
     </div>
   );
 }
