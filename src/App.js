@@ -1,12 +1,19 @@
 import './App.css';
 import {
   BrowserRouter as Router,
-} from "react-router-dom";
+  Routes,
+  Route
+} from 'react-router-dom';
+import Product from './Product/Product';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Router></Router>
+    <div className='App'>
+      <Router>
+        <Routes>
+          <Route element={<Product/>} path={'/:productId'} />
+        </Routes>
+      </Router>
     </div>
   );
 }
